@@ -1,0 +1,152 @@
+lang:
+#Авторизация
+     mes_noauthor: Autorisierung erforderlich
+     mes_regerror: Registrierung Fehler!
+     mes_baseerror: Datenbankfehler!
+     mes_authorerror: Falsche oder inaktive Benutzernamen und Passwort!
+     mes_authorized: Bitte füllen Sie die Felder
+     mes_login: Anmelden
+     mes_logout: Ausloggen
+     mes_password: Passwort
+     mes_replacepassword: Passwort erfolgreich geändert!
+     mes_confirmation: Bestätigen Sie die Aktion
+     mes_hidden_tags: Unsichtbar Tags gefunden. Es wird empfohlen, eine Source-Code-Editor.
+     mes_warning: Achtung!
+     mes_alert: Fehler!
+#Общие 
+     close: Schließen
+     save: Sparen
+     saving_process: Erhaltung...
+     continue: Vorgehen
+     next: Weiter
+     prev: Zurück
+     id: ID
+     title: Kopfzeile
+     content: Inhalt
+     text: Text
+     teaser: Teaser
+     image: Bild
+     details: Volltext
+     select: Wählen
+     new: Neu
+     edit: ändern
+     delete: Entfernen
+     width: Breite
+     height: Höhe
+     access: Berechtigungen
+#Права доступа
+     access_user: Benutzer (User)
+     access_suser: Moderator (Superuser)
+     access_admin: Administrator (Administrator)
+     access_nouser: Nur Besucher
+     access_all: Alles
+     access_none: Kein Zugriff
+     access_group: Zugriffsgruppen
+     access_level: Zugriffsebene
+#Редактор
+     ed_titleeditor: SiteEdit
+     ed_navbar_navigation: Navigation
+     ed_hide: Schalter-Ikonen der Editor
+     ed_show: Schalter-Ikonen der Editor
+#Переменные
+     var_copyrights: Copyrights
+     var_editor: Variablen-Editor
+     var_sitetitle: Titel Web-Site
+     var_title_edit_info: Doppelklicken Sie auf die linke Maustaste oder wählen Bereich für die Bearbeitung
+     var_sitesubtitle: Untertitel (Slogan)
+     var_statistic: Blockzähler
+     var_searchform: Suchformular
+     var_authorizeform: Autorisierungsformular
+     var_logo_upload: Logo hochladen
+     var_logo_edit: Logo ändern
+     #Контакты
+     var_contacts: Kontakt-Informationen
+     var_contacts_editor: Editor Kontaktinformationen
+     var_contacts_fullname: Name des Unternehmens
+     var_contacts_shortname: Kurzname des Unternehmens
+     var_contacts_phone: Telefon
+     var_contacts_fax: Fax
+     var_contacts_email: Kontakt E-Mail
+     var_contacts_email_info: Liegt in den Inhalten der Website angezeigt
+     var_contacts_postindex: PLZ
+     var_contacts_country: Land
+     var_contacts_city: Stadt
+     var_contacts_address: Adresse
+     var_contacts_emailadmin: E-Mail-Administrators
+     var_contacts_emailadmin_info: Wird beim Senden Feedback-Formulare und Mitteilungen an Ort
+#Страница
+     page_add: Neue Seite
+     page_edit: Seite bearbeiten
+     page_editor: Seiteneditor
+     page_enteringtext: Einführungstext
+     page_enteringtext_title: (Möglicherweise nicht in der Konstruktion vorgesehen werden)
+     page_closingtext: Endgültigen Text
+     page_enteringtext_title: (Möglicherweise nicht in der Konstruktion vorgesehen werden)
+     page_delete: Seite entfernen
+     page_options: Einstellungen
+     page_seo: SEO
+     page_meta: Meta-Informationen
+     page_title: Seitentitel
+     page_name: URL
+     page_transliterate: Umschreiben
+     page_transliterate_title: Transkribieren Seitentitel zu URL
+     page_redirect: Umleiten
+     page_redirect_title: Aktivieren Sie die automatische Umleitung auf dieser Seite unter der URL (freilassen, wenn nicht erforderlich)
+     page_menu: Anzeige-Einstellungen-Menü
+     page_menu_main: Zeige das Hauptmenü
+     page_menu_universal: Siehe die universelle Menü
+     page_index: Einstellungen Indizierung
+     page_index_enable: Aktivieren Indexierung (im XML-Sitemap und innere Suche verwendet wird)
+     page_homepage: Als Homepage
+     page_priority: Priority-Seite (im XML-Sitemap verwendet)
+     page_title_tag: <title> Tag
+     page_title_tag_title: Wird von Suchmaschinen und Browser-Titel
+     page_keywords: Keywords
+     page_keywords_title: Liste von Stichworten Seiteninhalt Komma
+     page_description: Beschreibung
+     page_description_title: Kurzbeschreibung des Seiteninhalts
+     page_domain_name: Domain-Namen
+     page_yandex: In der Liste der Indizierung Yandex
+     page_block_head: <head> Abschnitt
+     page_block_head_title: Seien Sie hier keine zusätzlichen Meta-Tags
+     page_block_javascript: JavaScript Abschnitt
+     page_block_javascript_title: Fügen Sie hier die erforderlichen Skripte für die Seite
+#Раздел
+     sec_add: Abschnitt erstellen
+     sec_edit: Amend Abschnitt
+     sec_editor: Abschnitt Editor
+     sec_delete: Abschnitt Löschen
+     sec_new: Neuer Abschnitt
+     sec_content: Inhalt
+     sec_image: Bild
+     sec_type: Modul
+     sec_params: Optionen
+     sec_langs: Textvariablen
+     sec_records: Artikel
+     sec_access: Berechtigungen
+     sec_hide: Abschnitt ausblenden
+     sec_hide_records: Artikel verstecken
+     sec_position: Editor Ordnung Abschnitte
+     sec_no_rights_action: Wirkung in Abwesenheit von Zugriffsrechten
+#Запись
+     rec_add: Artikel hinzufügen
+     rec_edit: Artikel bearbeiten
+     rec_editor: Artikel-Editor
+     rec_delete: Artikel löschen
+     rec_show: Artikel veröffentlichen
+#Изображения
+     img_add: Bild hinzufügen
+     img_edit: Bild ändern
+     img_delete: Bild entfernen
+     img_width: Bildbreite
+     img_height: Bildhöhe
+     img_width_prev: Thumbnail Breite
+     img_height_prev: Thumbnail Höhe
+     img_editor: Bild-Manager
+     img_alt: Alternativtext
+     img_alt_title: Wird verwendet, wenn das Bild nicht geladen werden konnte (Attribut alt)
+#Меню
+     menu_main: Hauptmenü
+     menu_universal: Universal-Menü
+     menu_all_pages: Alle Seiten
+     menu_editor: Menü-Editor

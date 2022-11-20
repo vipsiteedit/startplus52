@@ -1,0 +1,533 @@
+stat_config:
+   tableName: stat_config
+   tableType:
+     engine: MyISAM
+     charset: utf8
+   tableDrop: true
+   columns:
+     variable:
+       type: string(50)
+       notnull: true
+       primary: true
+     value:
+       type: string(255)
+
+stat_adminsessions:
+   tableName: stat_adminsessions
+   tableType:
+     engine: MyISAM
+     charset: utf8
+   tableDrop: true
+   columns:
+     hash:
+       type: string(32)
+       notnull: true
+       primary: true
+     login:
+       type: string(20)
+       notnull: true
+     time_first:
+       type: datetime
+     time_last:
+       type: datetime
+     ip:
+       type: string(64)
+       notnull: true
+     c:
+       type: integer
+       unsigned: true
+       notnull: true
+
+stat_cities:
+   tableName: stat_cities
+   tableType:
+     engine: MyISAM
+     charset: utf8
+   tableDrop: true
+   columns:
+     id:
+       type: integer
+       unsigned: true
+       notnull: true
+       primary: true
+       sequence: stat_cities_id
+     region:
+       type: integer
+       unsigned: true
+     name:
+       type: string(255)
+
+stat_countries:
+   tableName: stat_countries
+   tableDrop: true
+   tableType:
+     engine: MyISAM
+     charset: utf8
+   columns:
+     id:
+       type: integer
+       unsigned: true
+       notnull: true
+       primary: true
+       sequence: stat_countries_id
+     domain:
+       type: char(2)
+       index: true
+     name:
+       type: string(255)
+       index: true
+
+stat_datas:
+   tableName: stat_datas
+   tableDrop: true
+   tableType:
+     engine: MyISAM
+     charset: utf8
+   columns:
+     id:
+       type: integer
+       unsigned: true
+       notnull: true
+       primary: true
+       sequence: stat_datas_id
+     type:
+       type: enum
+       values: ['dm','br','os','ct','ss','rb','tp','ml']
+       index: true
+     name:
+       type: string(100)
+     d1:
+       type: string(255)
+     d2:
+       type: string(255)
+     d3:
+       type: string(255)
+
+stat_datasuser:
+   tableName: stat_datasuser
+   tableDrop: true
+   tableType:
+     engine: MyISAM
+     charset: utf8
+   columns:
+     id:
+       type: integer
+       unsigned: true
+       notnull: true
+       primary: true
+       sequence: stat_datasuser_id
+     type:
+       type: enum
+       values: ['','dm','pr','kn','cl','rk']
+       notnull: true
+       index: true
+     name:
+       type: string(100)
+       notnull: true
+     d1:
+       type: string(255)
+       notnull: true
+
+# IP Городов
+stat_ip2city:
+   tableName: stat_ip2city
+   tableType:
+     engine: MyISAM
+     charset: utf8
+   
+   tableComment: 'IP Городов'
+   columns:
+     ip_start:
+       type: integer
+       unsigned: true
+       notnull: true
+       index: true
+     ip_end:
+       type: integer
+       unsigned: true
+       notnull: true
+       index: true
+     city:
+       type: integer
+       unsigned: true
+       notnull: true
+       index: true
+
+# IP стран
+stat_ip2country:
+   tableName: stat_ip2country
+   tableDrop: true
+   tableType:
+     engine: MyISAM
+     charset: utf8
+   tableComment: 'IP стран'
+   columns:
+     id:
+       type: integer
+       unsigned: true
+       notnull: true
+       primary: true
+     ip_start:
+       type: integer
+       unsigned: true
+       notnull: true
+       index: true
+     ip_end:
+       type: integer
+       unsigned: true
+       notnull: true
+       index: true
+     country:
+       type: integer
+       unsigned: true
+       notnull: true
+       index: true
+
+# Учетная карточка пользователя
+stat_users:
+   tableName: stat_users
+   tableDrop: true
+   tableType:
+     engine: MyISAM
+     charset: utf8
+   tableComment: 'Учетная карточка пользователя'
+   columns:
+     id:
+       type: integer
+       unsigned: true
+       notnull: true
+       primary: true
+       sequence: stat_users_id
+     id_user_reg:
+       type: integer
+       unsigned: true
+       notnull: true
+       index: true
+     id_refer:
+       type: integer
+       unsigned: true
+       notnull: true
+       default: 0
+     ip_first:
+       type: integer
+       unsigned: true
+       notnull: true
+       index: true
+     date_first:
+       type: integer
+       unsigned: true
+       notnull: true
+       index: true
+     time_first:
+       type: integer
+       unsigned: true
+       notnull: true
+       index: true
+       default: 0
+     domain_first:
+       type: string(30)
+       notnull: true
+     request_uri_first:
+       type: string(255)
+       notnull: true
+     page_first:
+       type: string(20)
+       notnull: true
+     ref_domain_first:
+       type: string(255)
+       notnull: true
+     ref_page_first:
+       type: string(255)
+       notnull: true
+     ref_pagequery_first:
+       type: string(255)
+       notnull: true
+     ref_catalog_first:
+       type: integer
+       unsigned: true
+       notnull: true
+     ref_search_sys_first:
+       type: integer
+       unsigned: true
+       notnull: true
+     ref_search_query_first:
+       type: string(255)
+       notnull: true
+     ref_mail_sys_first:
+       type: integer
+       unsigned: true
+       notnull: true
+     ref_rating_first:
+       type: integer
+       unsigned: true
+       notnull: true
+     screensize:
+       type: string(10)
+       notnull: true
+     colorsdepth:
+       type: string(5)
+       notnull: true
+     cookies:
+       type: enum
+       values: ['Y','N']
+       notnull: true
+       default: 'N'
+     java:
+       type: enum
+       values: ['Y','N']
+       notnull: true
+       default: 'N'
+     javascript:
+       type: string(5)
+       notnull: true
+     ip_last:
+       type: integer
+       unsigned: true
+       notnull: true
+       index: true
+     date_last:
+       type: integer
+       unsigned: true
+       notnull: true
+       index: true
+     time_last:
+       type: integer
+       unsigned: true
+       notnull: true
+       index: true
+       default: 000000
+     request_uri_last:
+       type: string(255)
+       notnull: true
+     page_last:
+       type: string(20)
+       notnull: true
+     updated_at:
+       type: timestamp
+     created_at:
+       type: timestamp
+
+# Таблица языков
+stat_languages:
+   tableName: stat_languages
+   tableDrop: true
+   tableType:
+     engine: MyISAM
+     charset: utf8
+   tableComment: 'Таблица языков'
+   columns:
+     code:
+       type: char(2)
+       notnull: true
+       primary: true
+     eng:
+       type: string(50)
+       notnull: true
+     rus:
+       type: string(50)
+       notnull: true
+
+# Таблица для сбора статистики
+stat_log:
+   tableName: stat_log
+   tableDrop: true
+   tableType:
+     engine: MyISAM
+     charset: utf8
+   tableComment: 'Таблица для сбора статистики'
+   columns:
+     id:
+       type: integer
+       unsigned: true
+       notnull: true
+       primary: true
+       sequence: stat_log_id
+     id_session:
+       type: string(32)
+       index: true
+     id_user:
+       type: integer
+       unsigned: true
+       index: true
+     ip:
+       type: integer
+       unsigned: true
+       index: true
+     proxy:
+       type: integer
+       unsigned: true
+     ref_domain:
+       type: string(50)
+       index: true
+     ref_page:
+       type: string(255)
+       index: true
+     ref_pagequery:
+       type: string(255)
+     ref_catalog:
+       type: integer
+       unsigned: true
+     ref_search_sys:
+       type: integer
+       unsigned: true
+       index: true
+     ref_search_query:
+       type: string(255)
+       index: true
+     ref_mail_sys:
+       type: integer
+       unsigned: true
+     ref_rating:
+       type: integer
+       unsigned: true
+     agent:
+       type: string(255)
+     browser:
+       type: integer
+       unsigned: true
+     os:
+       type: integer
+       unsigned: true
+     acceptlang:
+       type: string(100)
+     date:
+       type: integer
+       unsigned: true
+       index: true
+     time:
+       type: integer
+       unsigned: true
+       index: true
+     domain:
+       type: string(50)
+     request_uri:
+       type: string(255)
+       index: true
+     page:
+       type: string(50)
+       index: true
+     titlepage:
+       type: string(255)
+       index: true
+     language:
+       type: char(3)
+     page_rateload:
+       type: float(10,2)
+       unsigned: true
+     existspage:
+       type: enum
+       values: ['1','']
+       default: 1
+     city:
+       type: integer
+       unsigned: true
+     country:
+       type: integer
+       unsigned: true
+
+# Таблица роботов
+stat_logrobots:
+   tableName: stat_logrobots
+   tableDrop: true
+   tableType:
+     engine: MyISAM
+     charset: utf8
+   tableComment: 'Таблица роботов'
+   columns:
+     id:
+       type: integer
+       unsigned: true
+       notnull: true
+       primary: true
+       sequence: stat_logrobots_id
+     id_robot:
+       type: integer
+       unsigned: true
+       notnull: true
+       index: true
+     ip:
+       type: integer
+       unsigned: true
+       notnull: true
+       index: true
+     agent:
+       type: string(255)
+       notnull: true
+     date:
+       type: integer
+       unsigned: true
+       notnull: true
+       index: true
+     time:
+       type: integer
+       unsigned: true
+       notnull: true
+       index: true
+       default: 000000
+     domain:
+       type: string(30)
+       notnull: true
+     request_uri:
+       type: string(255)
+       notnull: true
+     page:
+       type: string(20)
+       notnull: true
+     titlepage:
+       type: string(255)
+       notnull: true
+     existspage:
+       type: enum
+       values: ['Y','N']
+       notnull: true
+       default: 'Y'
+
+# Таблица для сохранения сессии
+stat_sessions:
+   tableName: stat_sessions
+   tableDrop: true
+   tableType:
+     engine: MyISAM
+     charset: utf8
+   columns:
+     id:
+       type: string(32)
+       notnull: true
+       primary: true
+     id_user:
+       type: integer
+       unsigned: true
+       notnull: true
+     timestamp:
+       type: integer
+       unsigned: true
+       notnull: true
+
+# Итоговая таблица статистики
+stat_total:
+   tableName: stat_total
+   tableDrop: true
+   tableType:
+     engine: MyISAM
+     charset: utf8
+   columns:
+     date:
+       type: integer
+       notnull: true
+       primary: true
+     views:
+       type: integer
+       unsigned: true
+       notnull: true
+     hits:
+       type: integer
+       unsigned: true
+       notnull: true
+     hosts:
+       type: integer
+       unsigned: true
+       notnull: true
+     users:
+       type: integer
+       unsigned: true
+       notnull: true

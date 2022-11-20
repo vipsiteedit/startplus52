@@ -1,0 +1,153 @@
+lang:
+#Авторизация
+     mes_noauthor: Требуется авторизация
+     mes_regerror: Ошибка регистрации!
+     mes_baseerror: Ошибка базы данных!
+     mes_authorerror: Неправильный или неактивный логин или пароль!
+     mes_authorized: Пожалуйста, заполните поля
+     mes_login: Логин
+     mes_logout: Выйти из системы
+     mes_password: Пароль
+     mes_replacepassword: Пароль успешно изменен!
+     mes_confirmation: Подтвердите действие
+     mes_hidden_tags: Обнаружены неотображаемые теги. Рекомендуется использовать редактор исходного кода.
+     mes_warning: Внимание!
+     mes_alert: Ошибка!
+#Общие 
+     close: Закрыть
+     save: Сохранить
+     cancel: Отмена
+     saving_process: Сохранение...
+     continue: Продолжить
+     next: Далее
+     prev: Назад
+     id: ID
+     title: Заголовок
+     content: Содержание
+     text: Текст
+     teaser: Краткий текст
+     image: Изображение
+     details: Подробный текст
+     select: Выбрать
+     new: Новый
+     edit: Изменить
+     delete: Удалить
+     width: Ширина
+     height: Высота
+     access: Права доступа
+#Права доступа
+     access_user: Пользователь (User)
+     access_suser: Модератор (Superuser)
+     access_admin: Администратор (Administrator)
+     access_nouser: Только посетители
+     access_all: Все
+     access_none: Нет доступа
+     access_group: Группы доступа
+     access_level: Уровень доступа
+#Редактор
+     ed_titleeditor: SiteEdit
+     ed_navbar_navigation: Навигация
+     ed_hide: Иконки редактора
+     ed_show: Иконки редактора
+#Переменные
+     var_copyrights: Copyrights
+     var_editor: Редактор переменных
+     var_sitetitle: Заголовок сайта
+     var_title_edit_info: Double-click or left-clik selected area to edit
+     var_sitesubtitle: Подзаголовок (слоган)
+     var_statistic: Блок счетчиков
+     var_searchform: Форма поиска
+     var_authorizeform: Форма авторизации
+     var_logo_upload: Загрузить логотип
+     var_logo_edit: Изменить логотип
+     #Контакты
+     var_contacts: Контактная информация
+     var_contacts_editor: Редактор контактной информации
+     var_contacts_fullname: Название компании
+     var_contacts_shortname: Краткое название
+     var_contacts_phone: Телефон
+     var_contacts_fax: Факс
+     var_contacts_email: Контактный E-mail
+     var_contacts_email_info: Отображается в содержимом сайта
+     var_contacts_postindex: Почтовый индекс
+     var_contacts_country: Страна
+     var_contacts_city: Город
+     var_contacts_address: Адрес
+     var_contacts_emailadmin: E-mail администратора
+     var_contacts_emailadmin_info: Используется при отправке форм обратной связи и уведомлениях с сайта
+#Страница
+     page_add: Новая страница
+     page_edit: Изменить страницу
+     page_editor: Редактор страниц
+     page_enteringtext: Вводный текст
+     page_enteringtext_title: (может быть не предусмотрен в дизайне)
+     page_closingtext: Завершающий текст
+     page_enteringtext_title: (может быть не предусмотрен в дизайне)
+     page_delete: Удалить страницу
+     page_options: Настройки
+     page_seo: SEO (продвижение)
+     page_meta: Мета-теги
+     page_title: Заголовок страницы
+     page_name: Адрес страницы
+     page_transliterate: из заголовка
+     page_transliterate_title: Преобразовать заголовок страницы в URL
+     page_redirect: Перенаправление
+     page_redirect_title: Включить автоматическое перенаправление с этой страницы на URL (не заполняйте, если не требуется)
+     page_menu: Настройки отображения в меню
+     page_menu_main: Отображать в главном меню
+     page_menu_universal: Отображать в универсальном меню
+     page_index: Настройки индексации
+     page_index_enable: Включить индексацию (используется в XML карте сайта и внутреннем поиске)
+     page_homepage: Установить главной страницей
+     page_priority: Приоритет страницы (используется в XML карте сайта)
+     page_title_tag: Тег title
+     page_title_tag_title: Используется поисковыми системами и в заголовках браузеров
+     page_keywords: Ключевые слова
+     page_keywords_title: Список ключевых фраз содержания страницы, разделенных запятой
+     page_description: Описание
+     page_description_title: Краткое описание содержания страницы
+     page_domain_name: Доменное имя
+     page_yandex: Добавить с список индексации Яндекса
+     page_block_head: Раздел head
+     page_block_head_title: Разместите сюда любые дополнительные meta-теги
+     page_block_javascript: Раздел JavaScript
+     page_block_javascript_title: Разместите здесь необходимые для страницы скрипты
+#Раздел
+     sec_add: Добавить раздел
+     sec_edit: Изменить раздел
+     sec_editor: Редактор раздела
+     sec_delete: Удалить раздел
+     sec_new: Новый раздел
+     sec_content: Содержание
+     sec_image: Изображение
+     sec_type: Модуль
+     sec_params: Параметры
+     sec_langs: Текстовые значения
+     sec_records: Записи
+     sec_access: Права доступа
+     sec_hide: Скрыть раздел
+     sec_hide_records: Скрыть записи
+     sec_position: Редактор порядка разделов
+     sec_no_rights_action: Действие при отсутствии прав доступа
+#Запись
+     rec_add: Добавить запись
+     rec_edit: Изменить запись
+     rec_editor: Редактор записей
+     rec_delete: Удалить запись
+     rec_show: Отобразить запись
+#Изображения
+     img_add: Добавить изображение
+     img_edit: Изменить изображение
+     img_delete: Удалить изображение
+     img_width: Ширина изображения
+     img_height: Высота изображения
+     img_width_prev: Ширина эскиза
+     img_height_prev: Высота эскиза
+     img_editor: Управление изображениями
+     img_alt: Альтернативный текст
+     img_alt_title: Используется, если изображение не может быть загружено (атрибут alt)
+#Меню
+     menu_main: Главное меню
+     menu_universal: Универсальное меню
+     menu_all_pages: Все страницы
+     menu_editor: Редактор меню

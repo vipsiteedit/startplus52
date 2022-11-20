@@ -1,0 +1,6 @@
+.editable-icon { 
+border: 1px solid #aaaaaa/*{borderColorHeader}*/; 
+background: #cccccc; 
+color: #222222/*{fcHeader}*/; 
+font-weight: bold; 
+}

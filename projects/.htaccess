@@ -1,0 +1,4 @@
+<Files ~ "\.(yml|xml|cfg|dat)$">
+    deny from all
+</Files>
+  

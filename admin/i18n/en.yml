@@ -1,0 +1,152 @@
+lang:
+#Авторизация
+     mes_noauthor: Authorization required
+     mes_regerror: Registration error!
+     mes_baseerror: Database error!
+     mes_authorerror: Invalid or inactive login or password!
+     mes_authorized: Please, fill in the fields
+     mes_login: Login
+     mes_logout: Logout
+     mes_password: Password
+     mes_replacepassword: Password has been successfully changed!
+     mes_confirmation: Confirm action
+     mes_hidden_tags: Invisible tags detected. Source code editor recommended.
+     mes_warning: Warning!
+     mes_alert: Alert!
+#Общие 
+     close: Close
+     save: Save
+     saving_process: Saving...
+     continue: Continue
+     next: Next
+     prev: Previous
+     id: ID
+     title: Title
+     content: Content
+     text: Text
+     teaser: Teaser
+     image: Image
+     details: Details
+     select: Select
+     new: New
+     edit: Edit
+     delete: Remove
+     width: Width
+     height: Height
+     access: Access options
+#Права доступа
+     access_user: User
+     access_suser: Superuser (moderator)
+     access_admin: Administrator
+     access_nouser: Visitors only
+     access_all: All
+     access_none: No access
+     access_group: Access groups
+     access_level: Access level
+#Редактор
+     ed_titleeditor: SiteEdit
+     ed_navbar_navigation: Navigation
+     ed_hide: Toggle editor icons
+     ed_show: Toggle editor icons
+#Переменные
+     var_copyrights: Copyright
+     var_editor: Variables editor
+     var_sitetitle: Site title
+     var_title_edit_info: Double-click or left-clik selected area to edit
+     var_sitesubtitle: Site subtitle (slogan)
+     var_statistic: Counters block
+     var_searchform: Search form
+     var_authorizeform: Login form
+     var_logo_upload: Upload logotype
+     var_logo_edit: Edit logotype
+     #Контакты
+     var_contacts: Edit contact information
+     var_contacts_editor: Contact information editor
+     var_contacts_fullname: Company name
+     var_contacts_shortname: Short company name
+     var_contacts_phone: Phone
+     var_contacts_fax: Fax
+     var_contacts_email: Contact e-mail
+     var_contacts_email_info: Used to display in site content
+     var_contacts_postindex: Postal code
+     var_contacts_country: Country
+     var_contacts_city: City
+     var_contacts_address: Street address
+     var_contacts_emailadmin: Administrator's e-mail
+     var_contacts_emailadmin_info: Used in feedback forms and site notifications
+#Страница
+     page_add: Create page
+     page_edit: Edit page
+     page_editor: Page editor
+     page_enteringtext: Intro text
+     page_enteringtext_title: Page introduction text (may not be included in design)
+     page_closingtext: Outro text
+     page_enteringtext_title: Page final text (may not be included in design)
+     page_delete: Delete page
+     page_options: Options
+     page_seo: SEO
+     page_meta: Meta information
+     page_title: Page title
+     page_name: Page URL
+     page_transliterate: Transliterate
+     page_transliterate_title: Transliterate page title into page URL
+     page_redirect: Redirect URL
+     page_redirect_title: Enable automatic redirection form this page (leave blank if not needed)
+     page_menu: Menu include options
+     page_menu_main: Display in main menu
+     page_menu_universal: Display in universal menu
+     page_index: Indexing options
+     page_index_enable: Enable page indexing (used in sitemap and internal search)
+     page_homepage: Use as homepage
+     page_priority: Page priority (used in sitemap)
+     page_title_tag: Title tag
+     page_title_tag_title: Used by search engines and in browser header
+     page_keywords: Meta keywords
+     page_keywords_title: Comma-separated list of keywords used by search engines
+     page_description: Meta description
+     page_description_title: Short sentence describing page content
+     page_domain_name: Domain name
+     page_yandex: Add to Yandex search index queue
+     page_block_head: HEAD section
+     page_block_head_title: Add any custom Meta information here
+     page_block_javascript: JavaScript section
+     page_block_javascript_title: Add any page-specific JavaScript code here
+#Раздел
+     sec_add: Create section
+     sec_edit: Edit section
+     sec_editor: Section editor
+     sec_delete: Delete section
+     sec_new: New section
+     sec_content: Section content
+     sec_image: Section image
+     sec_type: Module
+     sec_params: Parameters
+     sec_langs: Text varibles
+     sec_records: Records
+     sec_access: Access options
+     sec_hide: Hide section
+     sec_hide_records: Hide records
+     sec_position: Section positions editor
+     sec_no_rights_action: Action on insufficient rights
+#Запись
+     rec_add: Create record
+     rec_edit: Edit record
+     rec_editor: Record editor
+     rec_delete: Delete record
+     rec_show: Display record
+#Изображения
+     img_add: Add image
+     img_edit: Edit image
+     img_delete: Remove image
+     img_width: Image width
+     img_height: Image height
+     img_width_prev: Preivew width
+     img_height_prev: Preivew height
+     img_editor: Image manager
+     img_alt: Alternative text
+     img_alt_title: Used when image cannot be loaded
+#Меню
+     menu_main: Main menu
+     menu_universal: Universal menu
+     menu_all_pages: All pages
+     menu_editor: Site menu manager
